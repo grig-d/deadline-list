@@ -1,6 +1,7 @@
 import CountdownTimer from './js/countdown.js';
 import ref from './js/reference.js';
-// import clientLocal from './js/client-local.js';
+import storage from './js/storage.js';
+
 
 
 const deadLine = new CountdownTimer({
