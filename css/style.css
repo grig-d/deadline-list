@@ -1,0 +1,110 @@
+/* :root {
+  --background-primary: #f8f5eb;
+  --background-footer-primary: #1e1e31;
+  --background-footer-secondary: #292839;
+  --text-primary: #2f3149;
+  --text-secondary: #b3b3b3;
+  --text-footer: #f8f5eb;
+  --text-hover-and-contrast: #eb2227;
+  --form-footer: #4b4b5a;
+  --yellow-on-dark: #ecaa39;
+  --blue-on-dark: #2ebec7;
+} */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  display: block; /* margin-bottom disappears */
+  max-width: 100%; /* width isn't larger then parent */
+  height: auto; /* correct scaling */
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-container {
+  margin-top: 40px;
+}
+
+.header {
+  margin-top: 20px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.timer {
+  margin-top: 20px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  display: flex;
+}
+
+.field {
+  padding: 0 15px 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.value {
+  font-size: 80px;
+  color: #212121;
+}
+.field:not(:last-child) {
+  margin-right: 20px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #888888;
+}
+
+@media screen and (max-width: 480px) {
+  .value {
+    font-size: 40px;
+  }
+  .field {
+    padding: 0 7px 5px;
+    border-radius: 2px;
+  }
+  .field:not(:last-child) {
+    margin-right: 10px;
+  }
+  .label {
+    font-size: 11px;
+  }
+}
+
+#datepicker,
+#timepicker {
+  text-align: center;
+}
+
+#setDeadlineBtn {
+  width: 107px;
+}
