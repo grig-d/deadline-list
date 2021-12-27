@@ -2,13 +2,15 @@ import CountdownTimer from './js/countdown.js';
 import ref from './js/reference.js';
 import storage from './js/storage.js';
 
-console.log(storage.get('DateTime'));
+// console.log(storage.get('dateAndTime'));
 
 
 const deadLine = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('Dec 31, 2021 22:00:00'),
+  targetDate: new Date('Dec 31, 2021 18:00:00'),
 });
+
+storage.set('dateAndTimeCheck', deadLine.targetDate);
 
 deadLine.startCountdown();
 
@@ -65,8 +67,8 @@ $(document).ready(function () {
 
 
 // TODO: console log from local
-if (localStorage.getItem('DateTime')) {
-  const parsed = JSON.parse(localStorage.getItem('DateTime'))
+if (localStorage.getItem('dateAndTime')) {
+  const parsed = JSON.parse(localStorage.getItem('dateAndTime'));
   console.log('there is data: ', parsed);
 }
 
@@ -80,9 +82,9 @@ ref.setDeadlineBtn.addEventListener('click', e => {
     deadLine.targetDate = new Date(newDateTime);
 
     const stringified = JSON.stringify(new Date(newDateTime));
-    localStorage.setItem('DateTime', stringified);
+    localStorage.setItem('dateAndTime', stringified);
 
-    const parsed = JSON.parse(localStorage.getItem('DateTime'))
+    const parsed = JSON.parse(localStorage.getItem('dateAndTime'));
     console.log('there is data: ', parsed);
   }
 });

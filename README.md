@@ -12,4 +12,6 @@ TODO: Read me datepicker.js and tinepicker.js
 TODO: todo vscode extension like TODO highlighter
 TODO: Set name of deadline. 2 days to new year
 TODO: Deadline is over
+TODO: DeadlineStartTime place to localStorage for percentage
+TODO: Demons-icons runs the distance like dinosaurus
  -->
