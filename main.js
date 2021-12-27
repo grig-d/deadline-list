@@ -2,6 +2,7 @@ import CountdownTimer from './js/countdown.js';
 import ref from './js/reference.js';
 import storage from './js/storage.js';
 
+console.log(storage.get('DateTime'));
 
 
 const deadLine = new CountdownTimer({
