@@ -7,12 +7,17 @@ import storage from './js/storage.js';
 
 const deadLine = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('Dec 31, 2021 18:00:00'),
+  // targetDate: new Date('Dec 31, 2021 18:00:00'),
+  targetDate: new Date(), // this time creates lines in timer instead of NaN 
 });
 
 storage.set('dateAndTimeCheck', deadLine.targetDate);
 
 deadLine.startCountdown();
+
+deadLine.targetDate = new Date('Dec 31, 2021 18:00:00'); // updates timer every time you change this value
+// deadLine.targetDate = new Date('Dec 30, 2021 18:00:00');
+  
 
 //////////////////////////////////
 
