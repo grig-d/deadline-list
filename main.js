@@ -5,9 +5,10 @@ import storage from './js/storage.js';
 // console.log(storage.get('dateAndTime'));
 
 
+
 const deadLine = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('Dec 31, 2021 18:00:00'),
+  targetDate: new Date('Dec 31, 3000 19:00:00'),
 });
 
 storage.set('dateAndTimeCheck', deadLine.targetDate);

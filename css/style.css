@@ -26,6 +26,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  background: #f5f4fa;
 }
 
 img {
@@ -40,13 +41,41 @@ img {
 }
 
 .container {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 0 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  /* background-color: plum; */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+/* 
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+*/
+
+/* 
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+*/
+
 .form-container {
-  margin-top: 40px;
+  margin: 20px 0;
 }
 
 .header {
@@ -103,8 +132,32 @@ img {
 #datepicker,
 #timepicker {
   text-align: center;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  background-color: #efefef;
+}
+
+#datepicker:hover,
+#datepicker:focus,
+#timepicker:hover,
+#timepicker:focus,
+#setDeadlineBtn:hover,
+#setDeadlineBtn:focus,
+.deleteBtn:hover,
+.deleteBtn:focus {
+  background-color: #ddd;
 }
 
 #setDeadlineBtn {
   width: 107px;
+  height: 22px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+.deleteBtn {
+  height: 22px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
 }
