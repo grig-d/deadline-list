@@ -4,12 +4,10 @@ import storage from './js/storage.js';
 
 // console.log(storage.get('dateAndTime'));
 
-
-
 const deadLine = new CountdownTimer({
   selector: '#timer-1',
   // targetDate: new Date('Dec 31, 2021 18:00:00'),
-  targetDate: new Date(), // this time creates lines in timer instead of NaN 
+  targetDate: new Date(), // this time creates lines in timer instead of NaN
 });
 
 storage.set('dateAndTimeCheck', deadLine.targetDate);
@@ -18,7 +16,6 @@ deadLine.startCountdown();
 
 deadLine.targetDate = new Date('Jan 3, 2022 03:38:30'); // updates timer every time you change this value
 // deadLine.targetDate = new Date('Dec 30, 2021 18:00:00');
-  
 
 //////////////////////////////////
 
@@ -70,8 +67,6 @@ $(document).ready(function () {
 
 //////////////////////
 
-
-
 // TODO: console log from local
 if (localStorage.getItem('dateAndTime')) {
   const parsed = JSON.parse(localStorage.getItem('dateAndTime'));
@@ -96,3 +91,5 @@ ref.setDeadlineBtn.addEventListener('click', e => {
 });
 
 // console.log(deadLine.targetDate);
+
+// localStorage.clear();
