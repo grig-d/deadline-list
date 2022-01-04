@@ -16,7 +16,7 @@ storage.set('dateAndTimeCheck', deadLine.targetDate);
 
 deadLine.startCountdown();
 
-deadLine.targetDate = new Date('Dec 31, 2021 18:00:00'); // updates timer every time you change this value
+deadLine.targetDate = new Date('Jan 3, 2022 03:38:30'); // updates timer every time you change this value
 // deadLine.targetDate = new Date('Dec 30, 2021 18:00:00');
   
 
@@ -83,7 +83,7 @@ ref.setDeadlineBtn.addEventListener('click', e => {
   if (ref.datePicker.value) {
     const arr = ref.datePicker.value.split(' ');
     const newDateTime = `${arr[1]} ${arr[0]}, ${arr[2]} ${ref.timePicker.value}:00`;
-    console.log(new Date('Dec 31, 2021 22:00:00'));
+    console.log(new Date('Jan 4, 2022 22:00:00'));
     console.log(new Date(newDateTime));
     deadLine.targetDate = new Date(newDateTime);
 

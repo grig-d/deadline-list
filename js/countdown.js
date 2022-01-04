@@ -19,6 +19,7 @@ export default class CountdownTimer {
     };
 
     this.intervalId = setInterval(() => {
+      console.log('1');
       const date = Date.now();
       const time = this.targetDate - date;
       if (time < 0) {

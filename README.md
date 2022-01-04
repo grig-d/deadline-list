@@ -3,6 +3,7 @@
 <!--
 Header
 TODO: Header with buttons 'add new deadline' (countdown)
+TODO: Modal window to create new countdown
 
 TODO: deadline info panel about deadline date and able to update or delete countdown
 TODO: 'deadline set for:'
@@ -25,4 +26,8 @@ TODO: countdown.js need to message on screen when coutdown finished or when dead
 TODO: Design from Figma Web Studio
 
 TODO: Make Years Field if there are more days then 365
+
+TODO: CSS Tooltips https://www.instagram.com/p/CYGy7bLlswP/?utm_medium=share_sheet
+
+TODO: настройка отображения полей - годы, месяцы, недели (чекбоксы)
  -->
