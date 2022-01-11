@@ -37,6 +37,4 @@ TODO: выбор разных стилей - глассморфизм и т.п.
 TODO: выбор цвета фона как в браузерах
 
 Server
-TODO: user regisration and data synchronisation on all devices
-
- -->
+TODO: user regisration and data synchronisation on all devices -->
