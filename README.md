@@ -7,6 +7,7 @@ TODO: Modal window to create new countdown
 
 TODO: deadline info panel about deadline date and able to update or delete countdown
 TODO: 'deadline set for:'
+TODO: time remaining
 TODO: update deadline
 TODO: delete deadline
 TODO: Set name of deadline. 2 days to new year
@@ -35,6 +36,8 @@ TODO: настройка отображения полей - годы, меся�
 TODO: тема тёмная/светлая
 TODO: выбор разных стилей - глассморфизм и т.п.
 TODO: выбор цвета фона как в браузерах
+
+TODO: handlebars.hbs
 
 Server
 TODO: user regisration and data synchronisation on all devices -->
