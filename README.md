@@ -1,6 +1,8 @@
 # deadline-countdown
 
 <!--
+deadline list - app Name
+
 Header
 TODO: Header with buttons 'add new deadline' (countdown)
 TODO: Modal window to create new countdown
@@ -40,4 +42,8 @@ TODO: выбор цвета фона как в браузерах
 TODO: handlebars.hbs
 
 Server
-TODO: user regisration and data synchronisation on all devices -->
+TODO: user regisration and data synchronisation on all devices 
+TODO: user deadlines history 
+TODO: user history clear 
+
+-->
