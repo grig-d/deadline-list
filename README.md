@@ -1,15 +1,12 @@
-# deadline-countdown
+## **deadline-list**
 
 <!--
-deadline list - app Name
 
 Header
 TODO: Header with buttons 'add new deadline' (countdown)
 TODO: Modal window to create new countdown
 
 TODO: deadline info panel about deadline date and able to update or delete countdown
-TODO: 'deadline set for:'
-TODO: time remaining
 TODO: update deadline
 TODO: delete deadline
 TODO: Set name of deadline. 2 days to new year
