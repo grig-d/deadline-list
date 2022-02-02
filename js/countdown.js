@@ -24,7 +24,7 @@ export default class CountdownTimer {
       const time = this.targetDate - date;
       if (time < 0) {
         console.log(`time is over for ${this.selector}`);
-        this.stopCountdown();
+        this.stopCountdown(); // FIXME: don't stop countdown when set deadline more than one time - need to stopCountdown() when press button 'set deadline'
         return;
       }
 

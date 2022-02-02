@@ -68,19 +68,21 @@ $(document).ready(function () {
 //////////////////////
 
 // TODO: console log from local
-if (localStorage.getItem('dateAndTime')) {
-  const parsed = JSON.parse(localStorage.getItem('dateAndTime'));
-  console.log('there is data: ', parsed);
-}
+// if (localStorage.getItem('dateAndTime')) {
+//   const parsed = JSON.parse(localStorage.getItem('dateAndTime'));
+//   console.log('there is data: ', parsed);
+// }
 
 ref.setDeadlineBtn.addEventListener('click', e => {
   e.preventDefault();
   if (ref.datePicker.value) {
     const arr = ref.datePicker.value.split(' ');
     const newDateTime = `${arr[1]} ${arr[0]}, ${arr[2]} ${ref.timePicker.value}:00`;
-    console.log(new Date('Jan 4, 2022 22:00:00'));
-    console.log(new Date(newDateTime));
+    // console.log(new Date('Jan 4, 2022 22:00:00'));
+    // console.log(new Date(newDateTime));
     deadLine.targetDate = new Date(newDateTime);
+
+    deadLine.startCountdown();
 
     const stringified = JSON.stringify(new Date(newDateTime));
     localStorage.setItem('dateAndTime', stringified);
