@@ -19,6 +19,8 @@ TODO: Можно выбрать облик гонящегося демона о�
 TODO: Фейерверк или клетчатый флаг в конце
 TODO: кнопка Done - успешное завершение
 
+TODO: add todo-list to each deadline-countdown
+
 Local Storage
 TODO: info is written to localStorage
 

@@ -2,6 +2,10 @@ import CountdownTimer from './js/countdown.js';
 import ref from './js/reference.js';
 import storage from './js/storage.js';
 
+const deadlineArray = [];
+
+// // // // // // // // // // // // // // // //
+
 // console.log(storage.get('dateAndTime'));
 
 const deadLine = new CountdownTimer({
