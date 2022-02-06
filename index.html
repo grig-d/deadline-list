@@ -16,59 +16,172 @@
     <script src="./js/jquery.timepicker.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="deadline-heading">Deadline Heading</div>
-        deadline set for
-        <span id="current_deadline">18:00 31 December 2021</span>
-        <button type="button" class="deleteBtn">Delete</button>
+    <header class="header">HEADER</header>
+
+    <main class="main">
+      <div class="deadline--card">
+        <div class="deadline--header">
+          <div class="deadline--heading">Deadline Heading</div>
+          deadline set for
+          <span id="current_deadline">18:00 31 December 2021</span>
+          <button type="button" class="deleteBtn">Delete</button>
+        </div>
+        <div class="timer" id="timer-1">
+          <div class="field">
+            <span class="value" data-value="days">-</span>
+            <span class="label">Days</span>
+          </div>
+
+          <div class="field">
+            <span class="value" data-value="hours">--</span>
+            <span class="label">Hours</span>
+          </div>
+
+          <div class="field">
+            <span class="value" data-value="mins">--</span>
+            <span class="label">Minutes</span>
+          </div>
+
+          <div class="field">
+            <span class="value" data-value="secs">--</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <form id="datetimepicker">
+            <input
+              type="text"
+              id="datepicker"
+              name="deadline"
+              size="10"
+              autocomplete="off"
+              readonly
+              placeholder="date"
+            />
+            <input
+              type="text"
+              id="timepicker"
+              name="deadline"
+              size="10"
+              autocomplete="off"
+              readonly
+            />
+            <input type="submit" id="setDeadlineBtn" value="Set Deadline" />
+          </form>
+        </div>
       </div>
-      <div class="timer" id="timer-1">
-        <div class="field">
-          <span class="value" data-value="days">-</span>
-          <span class="label">Days</span>
+
+      <div class="deadline--card">
+        <div class="deadline--header">
+          <div class="deadline--heading">Deadline Heading</div>
+          deadline set for
+          <span id="2current_deadline">18:00 31 December 2021</span>
+          <button type="button" class="deleteBtn">Delete</button>
+        </div>
+        <div class="timer" id="2timer-1">
+          <div class="field">
+            <span class="value" data-value="days">-</span>
+            <span class="label">Days</span>
+          </div>
+
+          <div class="field">
+            <span class="value" data-value="hours">--</span>
+            <span class="label">Hours</span>
+          </div>
+
+          <div class="field">
+            <span class="value" data-value="mins">--</span>
+            <span class="label">Minutes</span>
+          </div>
+
+          <div class="field">
+            <span class="value" data-value="secs">--</span>
+            <span class="label">Seconds</span>
+          </div>
         </div>
 
-        <div class="field">
-          <span class="value" data-value="hours">--</span>
-          <span class="label">Hours</span>
-        </div>
-
-        <div class="field">
-          <span class="value" data-value="mins">--</span>
-          <span class="label">Minutes</span>
-        </div>
-
-        <div class="field">
-          <span class="value" data-value="secs">--</span>
-          <span class="label">Seconds</span>
+        <div class="form-container">
+          <form id="2datetimepicker">
+            <input
+              type="text"
+              id="datepicker"
+              name="deadline"
+              size="10"
+              autocomplete="off"
+              readonly
+              placeholder="date"
+            />
+            <input
+              type="text"
+              id="timepicker"
+              name="deadline"
+              size="10"
+              autocomplete="off"
+              readonly
+            />
+            <input type="submit" id="2setDeadlineBtn" value="Set Deadline" />
+          </form>
         </div>
       </div>
 
-      <div class="form-container">
-        <form id="datetimepicker">
-          <input
-            type="text"
-            id="datepicker"
-            name="deadline"
-            size="10"
-            autocomplete="off"
-            readonly
-            placeholder="date"
-          />
-          <input
-            type="text"
-            id="timepicker"
-            name="deadline"
-            size="10"
-            autocomplete="off"
-            readonly
-          />
-          <input type="submit" id="setDeadlineBtn" value="Set Deadline" />
-        </form>
-      </div>
-    </div>
+      <div class="deadline--card">
+        <div class="deadline--header">
+          <div class="deadline--heading">Deadline Heading</div>
+          deadline set for
+          <span id="12current_deadline">18:00 31 December 2021</span>
+          <button type="button" class="deleteBtn">Delete</button>
+        </div>
+        <div class="timer" id="12timer-1">
+          <div class="field">
+            <span class="value" data-value="days">-</span>
+            <span class="label">Days</span>
+          </div>
 
+          <div class="field">
+            <span class="value" data-value="hours">--</span>
+            <span class="label">Hours</span>
+          </div>
+
+          <div class="field">
+            <span class="value" data-value="mins">--</span>
+            <span class="label">Minutes</span>
+          </div>
+
+          <div class="field">
+            <span class="value" data-value="secs">--</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <form id="12datetimepicker">
+            <input
+              type="text"
+              id="datepicker"
+              name="deadline"
+              size="10"
+              autocomplete="off"
+              readonly
+              placeholder="date"
+            />
+            <input
+              type="text"
+              id="timepicker"
+              name="deadline"
+              size="10"
+              autocomplete="off"
+              readonly
+            />
+            <input type="submit" id="12setDeadlineBtn" value="Set Deadline" />
+          </form>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer">
+      designed by Demydovych Hryhorii
+    </footer>
     <script defer type="module" src="./main.js"></script>
   </body>
 </html>

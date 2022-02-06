@@ -24,8 +24,6 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
   background: #f5f4fa;
 }
 
@@ -35,13 +33,23 @@ img {
   height: auto; /* correct scaling */
 }
 
-.list {
-  margin: 0;
-  padding: 0;
+.header,
+.footer {
+  height: 50px;
+  background-color: #999;
+  color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-  margin-top: 20px;
+.main {
+  margin: 0; /* not empty */
+}
+
+.deadline--card {
+  width: 600px;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -53,37 +61,16 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.03em;
-*/
-
-/* 
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
-*/
-
 .form-container {
   margin: 0;
 }
 
-.header {
+.deadline--header {
   font-family: 'Roboto Mono', monospace;
   margin-bottom: 20px;
 }
 
-.deadline-heading {
+.deadline--heading {
   font-weight: 600;
   margin-bottom: 10px;
 }
