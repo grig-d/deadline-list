@@ -13,6 +13,7 @@
 
 html {
   box-sizing: border-box;
+  height: 100%; /* sticky footer */
 }
 
 *,
@@ -25,6 +26,9 @@ html {
 body {
   margin: 0;
   background: #f5f4fa;
+  height: 100%; /* sticky footer */
+  display: flex; /* sticky footer */
+  flex-direction: column; /* sticky footer */
 }
 
 img {
@@ -39,12 +43,14 @@ img {
   background-color: #999;
   color: #efefef;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .main {
-  margin: 0; /* not empty */
+  padding: 10px;
+  flex-grow: 1; /* sticky footer */
 }
 
 .deadline--card {

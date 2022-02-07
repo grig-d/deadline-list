@@ -45,4 +45,10 @@ TODO: user regisration and data synchronisation on all devices
 TODO: user deadlines history 
 TODO: user history clear 
 
+Handlebars
+TODO: https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js
+шаблон надо определить через querySelector('#id-name').innerHTML.trim();	
+и отправить его в markupFunction = Handlebars.compile(templateObject);
+добавить готовую разметку insertAdjacentHTML('beforeend', markup);
+handlebarsjs oldSchool	0:40:30	[JS18] М10-20. Шаблонизация и WebStorage API	Репета
 -->
