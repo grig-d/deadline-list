@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.page {
+    overflow: hidden;
+    display: flex; /* sticky footer */
+    flex-direction: column; /* sticky footer */
+    min-height: 100vh; /* sticky footer */
+    background-color: tan;
+}
+
+.header, .footer {
+    padding: 20px;
+    background-color: #ababed;
+    height: 150px;
+}
+
+.footer {
+    margin-top: auto; /* sticky footer */
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    
+}
+
