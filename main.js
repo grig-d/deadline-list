@@ -102,7 +102,7 @@ ref.setDeadlineBtn.addEventListener('click', e => {
 
 
 
-// // // // // // // // // 
+// // // // // // // // //
 /*
 
 function reset() {
@@ -196,3 +196,7 @@ function stopBlinking(parent) {
 }
 
 */
+
+// templating
+const templateCountdown = document.querySelector('#deadline-card-template').innerHTML.trim();
+console.log(templateCountdown);
