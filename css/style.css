@@ -26,9 +26,6 @@ html {
 body {
   margin: 0;
   background: #f5f4fa;
-  height: 100%; /* sticky footer */
-  display: flex; /* sticky footer */
-  flex-direction: column; /* sticky footer */
 }
 
 img {
@@ -37,9 +34,18 @@ img {
   height: auto; /* correct scaling */
 }
 
+
+.page {
+  overflow: hidden;
+  display: flex; /* sticky footer */
+  flex-direction: column; /* sticky footer */
+  min-height: 100vh; /* sticky footer */
+  background-color: tan; /* delete */
+}
+
 .header,
 .footer {
-  height: 50px;
+  height: 150px;
   background-color: #999;
   color: #efefef;
   display: flex;
@@ -48,14 +54,23 @@ img {
   align-items: center;
 }
 
-.main {
-  padding: 10px;
-  flex-grow: 1; /* sticky footer */
+.footer {
+  margin-top: auto; /* sticky footer */
 }
+
+.content {
+  padding: 10px;
+  background-color: #ababed;
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+/*-----------------------------*/
 
 .deadline--card {
   width: 600px;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   display: flex;
   flex-direction: column;
   text-align: center;
