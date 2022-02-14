@@ -45,7 +45,7 @@ img {
 
 .header,
 .footer {
-  height: 150px;
+  height: 80px;
   background-color: #999;
   color: #efefef;
   display: flex;
