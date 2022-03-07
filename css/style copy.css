@@ -34,13 +34,12 @@ img {
   height: auto; /* correct scaling */
 }
 
-
 .page {
   overflow: hidden;
   display: flex; /* sticky footer */
   flex-direction: column; /* sticky footer */
   min-height: 100vh; /* sticky footer */
-  background-color: tan; /* delete */
+  background-color: tan;
 }
 
 .header,
@@ -59,27 +58,23 @@ img {
 }
 
 .content {
-  padding: 10px;
-  background-color: #ababed;
-  max-width: 800px;
+  /* background-color: #ababed; */
+  /* max-width: 800px; */
   margin: 0 auto;
-
 }
 
 /*-----------------------------*/
 
 .deadline--card {
-  width: 600px;
-  /* margin: 20px auto; */
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 20px;
-  border-radius: 4px;
+  border-radius: 2px;
   background-color: #ffffff;
   /* background-color: plum; */
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 14px rgb(0 0 0 / 40%);
 }
 
 .form-container {
