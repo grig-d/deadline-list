@@ -47,13 +47,14 @@
         <div class="deadline--card">
           <div class="deadline--header">
             <div class="deadline--heading">Deadline Heading</div>
-            deadline set for
-            <span id="current_deadline">18:00 31 December 2021</span>
+            <span id="current_deadline"
+              >deadline set for 18:00 31 December 2021</span
+            >
             <button type="button" class="deleteBtn">Delete</button>
           </div>
           <div class="timer" id="timer-1">
             <div class="field">
-              <span class="value" data-value="days">-</span>
+              <span class="value" data-value="days">--</span>
               <span class="label">Days</span>
             </div>
             <div class="field">
@@ -68,6 +69,10 @@
               <span class="value" data-value="secs">--</span>
               <span class="label">Seconds</span>
             </div>
+          </div>
+          <div class="time-line">
+            <span class="time-passed" style="width: 90%;"></span>
+            <span class="time-rest" style="width: 10%;"></span>
           </div>
         </div>
         <!-- delete below -->

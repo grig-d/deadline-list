@@ -39,7 +39,7 @@ img {
   display: flex; /* sticky footer */
   flex-direction: column; /* sticky footer */
   min-height: 100vh; /* sticky footer */
-  background-color: tan;
+  /* background-color: tan; */
 }
 
 .header,
@@ -93,9 +93,9 @@ img {
 
 .timer {
   font-family: 'Roboto Mono', monospace;
-  text-align: center;
+  justify-content: center;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .field {
@@ -108,7 +108,27 @@ img {
   position: relative;
   padding-right: 10px;
   */
+  min-width: 118px;
 }
+
+.time-line {
+  display: flex;
+  align-items: center;
+  height: 4px;
+}
+
+.time-passed {
+  display: inline-block;
+  height: 50%;
+  background-color: #ccc;
+}
+
+.time-rest {
+  display: inline-block;
+  height: 100%;
+  background-color: #bbb;
+}
+
 
 /* .field::after {
   content: '';
@@ -133,7 +153,7 @@ img {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
-  color: #888888;
+  color: #888;
 }
 
 @media screen and (max-width: 480px) {

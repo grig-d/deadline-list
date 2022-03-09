@@ -29,7 +29,7 @@ export default class CountdownTimer {
       }
 
       const timeValue = {
-        days: Math.floor(time / (1000 * 60 * 60 * 24)),
+        days: this.pad(Math.floor(time / (1000 * 60 * 60 * 24))),
         hours: this.pad(
           Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
         ),
@@ -47,6 +47,8 @@ export default class CountdownTimer {
 
   pad(value) {
     return String(value).padStart(2, '0');
+    // if (value) {return String(value).padStart(2, '0')}
+    // return String(value).padStart(1, '0');
   }
 }
 
