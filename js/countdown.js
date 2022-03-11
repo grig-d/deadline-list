@@ -33,8 +33,8 @@ export default class CountdownTimer {
         hours: this.pad(
           Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
         ),
-        mins: this.pad(Math.floor((time % (1000 * 60 * 60)) / (1000 * 60))),
-        secs: this.pad(Math.floor((time % (1000 * 60)) / 1000)),
+        mins: this.padTwo(Math.floor((time % (1000 * 60 * 60)) / (1000 * 60))),
+        secs: this.padTwo(Math.floor((time % (1000 * 60)) / 1000)),
       };
 
       updateTimerFace(refs, timeValue);
@@ -46,10 +46,13 @@ export default class CountdownTimer {
   }
 
   pad(value) {
-    return String(value).padStart(2, '0');
-    // if (value) {return String(value).padStart(2, '0')}
-    // return String(value).padStart(1, '0');
+    return String(value).padStart(1, '0');
   }
+
+  padTwo(value) {
+    return String(value).padStart(2, '0');
+  }
+  // TODO: when days==hours==mins==secs==0 do secs: this.pad
 }
 
 function updateTimerFace(refs, timeValue) {
